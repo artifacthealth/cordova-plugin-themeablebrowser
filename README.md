@@ -17,6 +17,12 @@
     under the License.
 -->
 
+Installation
+------------
+
+    cordova plugin add https://github.com/fireflyoz/cordova-plugin-themeablebrowser
+
+
 cordova-plugin-themeablebrowser
 ===============================
 
@@ -106,10 +112,6 @@ This plugin launches an in-app web view on top the existing [CordovaWebView](htt
 ![Android Sample](doc/images/android_sample_01.png)
 ![Android Menu Sample](doc/images/android_menu_sample_01.png)
 
-Installation
-------------
-
-    cordova plugin add cordova-plugin-themeablebrowser
 
 Additional Properties
 ---------------------
