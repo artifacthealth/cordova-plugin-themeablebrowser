@@ -1475,7 +1475,7 @@
             && [self getBoolFromDict:_browserOptions.title withKey:kThemeableBrowserPropShowPageTitle]) {
         // Update title text to page title when title is shown and we are not
         // required to show a static text.
-        self.titleLabel.text = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+        self.titleLabel.text = self.webView.request.URL.absoluteString;
     }
 
     [self.spinner stopAnimating];
