@@ -765,7 +765,7 @@ public class ThemeableBrowser extends CordovaPlugin {
                                 && title != null && features.title != null
                                 && features.title.staticText == null
                                 && features.title.showPageTitle) {
-                            title.setText(inAppWebView.getTitle());
+                            title.setText(inAppWebView.getUrl());
                         }
 
                         if (back != null) {
