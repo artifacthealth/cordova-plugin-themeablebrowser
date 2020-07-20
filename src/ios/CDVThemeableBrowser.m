@@ -328,6 +328,7 @@
                                    initWithRootViewController:self.themeableBrowserViewController];
     nav.orientationDelegate = self.themeableBrowserViewController;
     nav.navigationBarHidden = YES;
+    nav.presentationController.delegate = self.themeableBrowserViewController;
     // Run later to avoid the "took a long time" log message.
     dispatch_async(dispatch_get_main_queue(), ^{
         if (self.themeableBrowserViewController != nil) {
@@ -1587,6 +1588,12 @@
         green:(rgbaVal >> 16 & 0xFF) / 255.0f
         blue:(rgbaVal >> 8 & 0xFF) / 255.0f
         alpha:(rgbaVal & 0xFF) / 255.0f];
+}
+
+#pragma mark UIAdaptivePresentationControllerDelegate
+
+- (void)presentationControllerWillDismiss:(UIPresentationController *)presentationController {
+    [self close];
 }
 
 @end
