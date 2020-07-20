@@ -80,7 +80,7 @@
 
 @end
 
-@interface CDVThemeableBrowserViewController : UIViewController <UIWebViewDelegate, CDVScreenOrientationDelegate, UIActionSheetDelegate>{
+@interface CDVThemeableBrowserViewController : UIViewController <UIWebViewDelegate, CDVScreenOrientationDelegate, UIActionSheetDelegate, UIAdaptivePresentationControllerDelegate>{
     @private
     NSString* _userAgent;
     NSString* _prevUserAgent;
